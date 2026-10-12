@@ -1,0 +1,267 @@
+@import "tailwindcss";
+
+@theme {
+  /* Identidade Clean Drive Car Wash */
+  --color-preto: #030a18;
+  --color-preto-2: #060f22;
+  --color-preto-3: #0a1730;
+  --color-azul: #075be8;
+  --color-azul-claro: #3b82f6;
+  --color-prata: #e8edf5;
+  --color-prata-2: #9fadc4;
+  --color-prata-3: #6c7c96;
+  --color-borda: #16233f;
+  --color-borda-2: #1e2f52;
+
+  --font-display: var(--font-oswald), "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-sans: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: var(--color-preto);
+    color: var(--color-prata);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  ::selection {
+    background-color: var(--color-azul);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-azul-claro);
+    outline-offset: 3px;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font-family: inherit;
+  }
+}
+
+@layer components {
+  .rotulo {
+    font-size: 0.6875rem;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--color-azul-claro);
+    font-weight: 500;
+  }
+
+  .titulo-secao {
+    font-size: clamp(1.9rem, 4vw, 2.9rem);
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+  }
+
+  .botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    border: 1px solid transparent;
+    padding: 0.95rem 1.75rem;
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease,
+      color 0.3s ease,
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .botao:hover {
+    transform: translateY(-2px);
+  }
+
+  .botao-azul {
+    background-color: var(--color-azul);
+    color: #fff;
+    box-shadow: 0 10px 30px -12px color-mix(in srgb, var(--color-azul) 80%, transparent);
+  }
+
+  .botao-azul:hover {
+    background-color: var(--color-azul-claro);
+    box-shadow: 0 16px 34px -12px color-mix(in srgb, var(--color-azul-claro) 85%, transparent);
+  }
+
+  .botao-contorno {
+    background-color: transparent;
+    color: var(--color-prata);
+    border-color: var(--color-borda-2);
+  }
+
+  .botao-contorno:hover {
+    border-color: var(--color-azul-claro);
+    color: #fff;
+    background-color: color-mix(in srgb, var(--color-azul) 14%, transparent);
+  }
+
+  .botao-claro {
+    background-color: var(--color-prata);
+    color: var(--color-preto);
+  }
+
+  .botao-claro:hover {
+    background-color: #fff;
+  }
+
+  .botao:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .campo {
+    width: 100%;
+    background-color: color-mix(in srgb, #fff 4%, transparent);
+    border: 1px solid var(--color-borda-2);
+    border-radius: 2px;
+    padding: 0.8rem 0.95rem;
+    font-size: 0.9375rem;
+    color: var(--color-prata);
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+  }
+
+  .campo::placeholder {
+    color: var(--color-prata-3);
+  }
+
+  .campo:hover {
+    border-color: color-mix(in srgb, var(--color-azul-claro) 45%, var(--color-borda-2));
+  }
+
+  .campo:focus {
+    border-color: var(--color-azul-claro);
+    outline: none;
+    background-color: color-mix(in srgb, #fff 6%, transparent);
+  }
+
+  .campo[aria-invalid="true"] {
+    border-color: #f87171;
+  }
+
+  .cartao {
+    position: relative;
+    background: linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--color-preto-3) 92%, transparent) 0%,
+      var(--color-preto-2) 100%
+    );
+    border: 1px solid var(--color-borda);
+    border-radius: 3px;
+    transition: border-color 0.35s ease, transform 0.35s ease;
+  }
+
+  .cartao:hover {
+    border-color: color-mix(in srgb, var(--color-azul) 55%, var(--color-borda));
+    transform: translateY(-4px);
+  }
+
+  .linha-azul {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-azul) 20%,
+      var(--color-azul-claro) 50%,
+      var(--color-azul) 80%,
+      transparent
+    );
+  }
+
+  .zoom-ativo img {
+    transition: transform 1.1s cubic-bezier(0.2, 0.6, 0.2, 1);
+  }
+
+  .zoom-ativo:hover img {
+    transform: scale(1.06);
+  }
+
+  .texto-suave {
+    color: var(--color-prata-2);
+  }
+}
+
+@keyframes cd-sobe {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cd-pulsa {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.anim-sobe {
+  animation: cd-sobe 0.8s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
+.anim-delay-1 {
+  animation-delay: 0.12s;
+}
+.anim-delay-2 {
+  animation-delay: 0.24s;
+}
+.anim-delay-3 {
+  animation-delay: 0.36s;
+}
+.anim-delay-4 {
+  animation-delay: 0.48s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .cartao:hover,
+  .botao:hover {
+    transform: none;
+  }
+}
