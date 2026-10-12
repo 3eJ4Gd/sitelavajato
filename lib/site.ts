@@ -14,8 +14,8 @@ const numeroWhatsapp = (
   process.env.NEXT_PUBLIC_WHATSAPP_NUMERO ?? ""
 ).replace(/\D/g, "");
 
-/** Valor padrão provisório — troque pelo número real antes de publicar. */
-const WHATSAPP_PADRAO = "5511999990000";
+/** Número real do WhatsApp da empresa (55 + 85 + número). */
+const WHATSAPP_PADRAO = "5585986944773";
 
 export type Horario = { dia: string; horas: string };
 export type RedeSocial = { nome: string; url: string };
@@ -63,8 +63,8 @@ export const site: Site = {
   whatsapp: numeroWhatsapp || WHATSAPP_PADRAO,
   whatsappNaoConfigurado: (numeroWhatsapp || WHATSAPP_PADRAO) === WHATSAPP_PADRAO,
 
-  telefoneExibicao: "(11) 99999-0000",
-  telefoneLink: "5511999990000",
+  telefoneExibicao: "(85) 98694-4773",
+  telefoneLink: "5585986944773",
 
   email: "contato@carlaodetail.com.br",
 
