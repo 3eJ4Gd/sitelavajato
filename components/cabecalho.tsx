@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -13,32 +14,6 @@ const LINKS = [
   { href: "/sobre", texto: "Sobre" },
   { href: "/contato", texto: "Contato" },
 ];
-
-function Selo() {
-  return (
-    <svg
-      width="30"
-      height="30"
-      viewBox="0 0 40 40"
-      fill="none"
-      aria-hidden="true"
-      className="shrink-0"
-    >
-      <path
-        d="M20 3.5c6.2 6.7 11 12.1 11 18.3A11 11 0 0 1 20 32.8a11 11 0 0 1-11-11C9 15.6 13.8 10.2 20 3.5Z"
-        stroke="#E8EDF5"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M20 12.2c3.1 3.6 5.2 6.4 5.2 9.4a5.2 5.2 0 1 1-10.4 0c0-3 2.1-5.8 5.2-9.4Z"
-        fill="#075BE8"
-        fillOpacity="0.85"
-      />
-      <path d="M31.5 8.5l1.1 2.6 2.6 1.1-2.6 1.1-1.1 2.6-1.1-2.6-2.6-1.1 2.6-1.1 1.1-2.6Z" fill="#E8EDF5" />
-    </svg>
-  );
-}
 
 function IconeMenu({ aberto }: { aberto: boolean }) {
   return (
@@ -103,7 +78,14 @@ export function Cabecalho() {
           </button>
 
           <Link href="/" className="group flex items-center gap-3">
-            <Selo />
+            <Image
+              src="/imagens/logo-carlao.jpg"
+              alt=""
+              width={44}
+              height={44}
+              priority
+              className="h-10 w-10 shrink-0 rounded-full border border-borda-2 object-cover object-top sm:h-11 sm:w-11"
+            />
             <span className="flex flex-col leading-none">
               <span className="font-display text-xl tracking-[0.16em] sm:text-2xl">
                 <span className="text-prata">CARLÃO</span>
