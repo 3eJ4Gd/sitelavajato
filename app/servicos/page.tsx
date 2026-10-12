@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata = {
   title: "Serviços de lavagem",
   description:
-    "Lavagem externa, limpeza interna e lavagem completa: veja o que entra em cada serviço da Clean Drive Car Wash e consulte o valor.",
+    "Lavagem externa, limpeza interna e lavagem completa: veja o que entra em cada serviço do Carlão Detail e consulte o valor.",
   alternates: { canonical: "/servicos" },
 };
 
@@ -107,7 +107,7 @@ export default function PaginaServicos() {
             Já sabe o que precisa?
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed texto-suave">
-            Informe nome, veículo, serviço, data e horário. A {site.nome} responde pelo WhatsApp
+            Informe nome, veículo, serviço, data e horário. O {site.nome} responde pelo WhatsApp
             confirmando disponibilidade e valor — a solicitação ainda não é uma reserva
             confirmada.
           </p>

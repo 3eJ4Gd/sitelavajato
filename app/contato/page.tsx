@@ -6,7 +6,7 @@ import { linkWhatsapp } from "@/lib/whatsapp";
 export const metadata = {
   title: "Contato e agendamento",
   description:
-    "Solicite seu agendamento na Clean Drive Car Wash: nome, veículo, serviço, data e horário enviados pelo WhatsApp. Veja endereço, horários e mapa.",
+    "Solicite seu agendamento no Carlão Detail: nome, veículo, serviço, data e horário enviados pelo WhatsApp. Veja endereço, horários e mapa.",
   alternates: { canonical: "/contato" },
 };
 
@@ -154,7 +154,7 @@ export default async function PaginaContato({
 
           <div className="mt-8 h-[380px] overflow-hidden border border-borda">
             <iframe
-              title={`Mapa da ${site.nomeCompleto} — ${site.endereco.completo}`}
+              title={`Mapa do ${site.nomeCompleto} — ${site.endereco.completo}`}
               src={`https://www.google.com/maps?q=${mapaQuery(site.endereco)}&output=embed`}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

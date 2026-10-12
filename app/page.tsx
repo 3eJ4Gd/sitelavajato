@@ -194,7 +194,7 @@ export default function PaginaInicial() {
         aria-labelledby="titulo-diferenciais"
       >
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24">
-          <p className="rotulo">Por que escolher a Clean Drive</p>
+          <p className="rotulo">Por que escolher o Carlão Detail</p>
           <h2 id="titulo-diferenciais" className="titulo-secao mt-4 max-w-2xl text-prata">
             Processo organizado, resultado consistente
           </h2>
@@ -286,7 +286,7 @@ export default function PaginaInicial() {
           <div>
             <p className="rotulo">Onde estamos</p>
             <h2 id="titulo-local" className="titulo-secao mt-4 text-prata">
-              Visite a Clean Drive
+              Visite o Carlão Detail
             </h2>
 
             <address className="mt-6 text-base leading-relaxed texto-suave not-italic">
@@ -325,7 +325,7 @@ export default function PaginaInicial() {
 
           <div className="min-h-[320px] overflow-hidden border border-borda">
             <iframe
-              title={`Mapa da ${site.nomeCompleto} — ${site.endereco.completo}`}
+              title={`Mapa do ${site.nomeCompleto} — ${site.endereco.completo}`}
               src={`https://www.google.com/maps?q=${mapaQuery(site.endereco)}&output=embed`}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

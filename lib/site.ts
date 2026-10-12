@@ -1,5 +1,5 @@
 /**
- * Dados comerciais da Clean Drive Car Wash.
+ * Dados comerciais da Carlão Detail.
  *
  * Este é o ÚNICO arquivo que precisa ser editado para alterar telefone,
  * WhatsApp, endereço, horários e redes sociais. Não há painel administrativo
@@ -46,15 +46,15 @@ export interface Site {
 }
 
 export const site: Site = {
-  nome: "Clean Drive",
-  nomeCompleto: "Clean Drive Car Wash",
-  nomeLegivel: "CLEAN DRIVE CAR WASH",
+  nome: "Carlão Detail",
+  nomeCompleto: "Carlão Detail",
+  nomeLegivel: "CARLÃO DETAIL",
   slogan: "Mais que uma lavagem, é um cuidado especial.",
   descricao:
     "Lavagem automotiva e estética veicular com cuidado, tecnologia e atenção aos detalhes. Agende sua lavagem pelo WhatsApp.",
 
   /** Domínio público usado em metadados, Open Graph e sitemap. */
-  dominio: process.env.NEXT_PUBLIC_DOMINIO ?? "https://cleandrivecarwash.com.br",
+  dominio: process.env.NEXT_PUBLIC_DOMINIO ?? "https://carlaodetail.com.br",
 
   /**
    * WhatsApp em formato internacional, apenas números.
@@ -66,7 +66,7 @@ export const site: Site = {
   telefoneExibicao: "(11) 99999-0000",
   telefoneLink: "5511999990000",
 
-  email: "contato@cleandrivecarwash.com.br",
+  email: "contato@carlaodetail.com.br",
 
   endereco: {
     logradouro: "Av. Principal",

@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata = {
   title: "Estética automotiva",
   description:
-    "Polimento automotivo, higienização interna e proteção da pintura com avaliação prévia do veículo. Conheça os tratamentos da Clean Drive Car Wash.",
+    "Polimento automotivo, higienização interna e proteção da pintura com avaliação prévia do veículo. Conheça os tratamentos do Carlão Detail.",
   alternates: { canonical: "/estetica" },
 };
 
@@ -166,7 +166,7 @@ export default function PaginaEstetica() {
             Peça uma avaliação do seu veículo
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed texto-suave">
-            Envie modelo, ano e fotos pelo WhatsApp ou preencha o formulário. A {site.nome}{" "}
+            Envie modelo, ano e fotos pelo WhatsApp ou preencha o formulário. O {site.nome}{" "}
             responde com o procedimento indicado e o valor correspondente.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">

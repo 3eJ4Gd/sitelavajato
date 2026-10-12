@@ -1,6 +1,6 @@
-# Clean Drive Car Wash · Site institucional
+# Carlão Detail · Site institucional
 
-Site premium da **Clean Drive Car Wash** (lavagem automotiva e estética veicular),
+Site premium da **Carlão Detail** (lava jato, lavagem automotiva e estética veicular),
 construído em **Next.js 16 + TypeScript + Tailwind CSS 4**, com identidade visual
 preto azulado `#030A18`, azul elétrico `#075BE8`, azul brilhante `#3B82F6` e prata
 metálico `#E8EDF5`, títulos em **Oswald** e textos em **Inter**.
@@ -91,7 +91,7 @@ ou refaça o build).
 Mensagem enviada:
 
 ```
-Olá, Clean Drive! Gostaria de solicitar um agendamento.
+Olá, Carlão Detail! Gostaria de solicitar um agendamento.
 
 Nome: [nome]
 Veículo: [modelo]

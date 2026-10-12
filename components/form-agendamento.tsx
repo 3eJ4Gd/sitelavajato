@@ -263,7 +263,7 @@ export function FormAgendamento({ servicoInicial = "" }: { servicoInicial?: stri
         </button>
 
         <p className="mt-4 text-xs leading-relaxed text-prata-3">
-          Ao enviar, o WhatsApp da {site.nome} abre com a mensagem preenchida.{" "}
+          Ao enviar, o WhatsApp do {site.nome} abre com a mensagem preenchida.{" "}
           <strong className="text-prata-2">
             A solicitação só é considerada confirmada após a resposta da equipe.
           </strong>

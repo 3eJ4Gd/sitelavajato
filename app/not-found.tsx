@@ -8,7 +8,7 @@ export default function NaoEncontrado() {
       <h1 className="titulo-secao mt-4 text-prata">Página não encontrada</h1>
       <p className="mt-5 text-sm leading-relaxed texto-suave sm:text-base">
         O endereço que você acessou não existe ou foi movido. Que tal voltar para o início ou
-        ver os serviços da {site.nome}?
+        ver os serviços do {site.nome}?
       </p>
 
       <div className="mt-9 flex flex-wrap justify-center gap-3">

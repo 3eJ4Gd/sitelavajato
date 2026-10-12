@@ -106,12 +106,12 @@ export function Cabecalho() {
             <Selo />
             <span className="flex flex-col leading-none">
               <span className="font-display text-xl tracking-[0.16em] sm:text-2xl">
-                <span className="text-prata">CLEAN</span>
+                <span className="text-prata">CARLÃO</span>
                 <span> </span>
-                <span className="text-azul-claro">DRIVE</span>
+                <span className="text-azul-claro">DETAIL</span>
               </span>
               <span className="mt-1 text-[0.5rem] tracking-[0.46em] text-prata-3 uppercase">
-                Car Wash
+                Lava Jato
                 <span> </span>
               </span>
             </span>

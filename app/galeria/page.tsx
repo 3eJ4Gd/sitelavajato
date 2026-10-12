@@ -5,7 +5,7 @@ import { CtaFinal } from "@/components/cta-final";
 export const metadata = {
   title: "Galeria de trabalhos",
   description:
-    "Fotos dos veículos atendidos pela Clean Drive Car Wash, com filtros por serviço, comparação de antes e depois e visualização ampliada.",
+    "Fotos dos veículos atendidos pelo Carlão Detail, com filtros por serviço, comparação de antes e depois e visualização ampliada.",
   alternates: { canonical: "/galeria" },
 };
 

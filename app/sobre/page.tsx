@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata = {
   title: "Sobre nós",
   description:
-    "Conheça a forma de trabalhar da Clean Drive Car Wash: avaliação prévia, produtos adequados, processo organizado e confirmação de cada agendamento.",
+    "Conheça a forma de trabalhar do Carlão Detail: avaliação prévia, produtos adequados, processo organizado e confirmação de cada agendamento.",
   alternates: { canonical: "/sobre" },
 };
 
@@ -67,7 +67,7 @@ export default function PaginaSobre() {
             </h2>
             <div className="mt-6 space-y-4 text-sm leading-relaxed texto-suave sm:text-base">
               <p>
-                A {site.nomeCompleto} trabalha com lavagem automotiva e estética veicular. O
+                O {site.nomeCompleto} trabalha com lavagem automotiva e estética veicular. O
                 trabalho é feito por etapas, com produtos adequados a cada material e revisão
                 final antes da entrega.
               </p>

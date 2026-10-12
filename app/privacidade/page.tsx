@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 export const metadata = {
   title: "Política de privacidade",
   description:
-    "Como a Clean Drive Car Wash trata os dados enviados pelos visitantes no formulário de agendamento, em conformidade com a LGPD.",
+    "Como o Carlão Detail trata os dados enviados pelos visitantes no formulário de agendamento, em conformidade com a LGPD.",
   alternates: { canonical: "/privacidade" },
 };
 

@@ -159,4 +159,4 @@ export const comparacoes: Comparacao[] = [
 
 /** Avisos exibidos na interface enquanto o conteúdo for demonstrativo. */
 export const avisoConteudoDemonstrativo =
-  "Galeria demonstrativa — as fotos ainda não são do portfólio real da Clean Drive. Substitua por fotos dos veículos atendidos antes de publicar.";
+  "Galeria demonstrativa — as fotos ainda não são do portfólio real do Carlão Detail. Substitua por fotos dos veículos atendidos antes de publicar.";

@@ -2,7 +2,7 @@
  * Catálogo de serviços — configurável.
  *
  * Edite nome, descrição, itens inclusos, preço e imagem para refletir
- * exatamente os serviços oferecidos pela Clean Drive.
+ * exatamente os serviços oferecidos pela Carlão Detail.
  *
  * - `preco: null`  → o card exibe "Sob consulta" e o botão vira "Consultar preço".
  * - `preco: "R$ 120"` → o valor aparece no card e no botão "Agendar este serviço".
