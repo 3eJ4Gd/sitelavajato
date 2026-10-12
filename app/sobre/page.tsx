@@ -90,15 +90,24 @@ export default function PaginaSobre() {
             </div>
           </div>
 
-          <div className="relative aspect-[4/3] overflow-hidden border border-borda">
+          <div className="relative">
+            <div className="relative aspect-[4/3] overflow-hidden border border-borda">
+              <Image
+                src="/imagens/sobre-detalhe.jpg"
+                alt="Detalhe de roda sobre piso molhado durante o acabamento"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 shadow-[inset_0_0_80px_rgba(7,91,232,0.25)]" />
+            </div>
             <Image
-              src="/imagens/sobre-detalhe.jpg"
-              alt="Detalhe de roda sobre piso molhado durante o acabamento"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
+              src="/imagens/logo-carlao.jpg"
+              alt="Profissional do Carlão Detail polindo a pintura de um veículo"
+              width={112}
+              height={112}
+              className="absolute bottom-5 left-5 h-24 w-24 rounded-full border-2 border-preto/70 object-cover object-top shadow-[0_16px_40px_-12px_rgba(0,0,0,0.85)] sm:h-28 sm:w-28"
             />
-            <div className="absolute inset-0 shadow-[inset_0_0_80px_rgba(7,91,232,0.25)]" />
           </div>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site, mapaQuery } from "@/lib/site";
 import { servicos } from "@/lib/servicos";
@@ -21,13 +22,24 @@ export function Rodape() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="font-display text-2xl tracking-[0.16em]">
-              <span className="text-prata">CARLÃO</span>
-              <span className="text-azul-claro"> DETAIL</span>
-            </p>
-            <p className="mt-1 text-[0.5rem] tracking-[0.46em] text-prata-3 uppercase">
-              Lava Jato
-            </p>
+            <div className="flex items-center gap-4">
+              <Image
+                src="/imagens/logo-carlao.jpg"
+                alt=""
+                width={64}
+                height={64}
+                className="h-16 w-16 shrink-0 rounded-full border border-borda-2 object-cover object-top"
+              />
+              <div>
+                <p className="font-display text-2xl tracking-[0.16em]">
+                  <span className="text-prata">CARLÃO</span>
+                  <span className="text-azul-claro"> DETAIL</span>
+                </p>
+                <p className="mt-1 text-[0.5rem] tracking-[0.46em] text-prata-3 uppercase">
+                  Lava Jato
+                </p>
+              </div>
+            </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed texto-suave">{site.slogan}</p>
             <p className="mt-5 text-sm texto-suave">{site.telefoneExibicao}</p>
             <a
